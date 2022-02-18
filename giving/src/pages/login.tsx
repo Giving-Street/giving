@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import {SERVER_URL} from "../constants";
 
 const PageLayout = styled.div`
     display: flex;
@@ -28,7 +29,7 @@ export const LoginPage = () => {
 
             <Container className="login-providers">
                 <Box>
-                    <a href="http://localhost:8000/auth/google/login" >Login With Google</a>
+                    <a href={`${SERVER_URL}/auth/google/login`} >Login With Google</a>
                 </Box>
             </Container>
         </PageLayout>
