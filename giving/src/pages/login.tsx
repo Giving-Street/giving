@@ -1,6 +1,4 @@
-import GoogleLogin from "react-google-login";
 import styled from "@emotion/styled"
-import {useCallback, useState} from "react";
 
 const PageLayout = styled.div`
     display: flex;
@@ -23,25 +21,15 @@ const Box = styled.div`
     margin: 12px 0;
 `
 
-function GoogleLoginProvider() {
-    const [token, setToken] = useState("")
-    const handleLogin = useCallback(() => {
-        console.log("login success")
-    }, [])
-    return (
-        <Box className="google-provider">
-            <GoogleLogin clientId={import.meta.env?.VITE_GOOGLE_CLIENT_ID as string} onSuccess={handleLogin}/>
-        </Box>
-    );
-}
-
 export const LoginPage = () => {
     return (
         <PageLayout className="login-page">
             Giving Street에 로그인 해주세요
 
             <Container className="login-providers">
-                <GoogleLoginProvider/>
+                <Box>
+                    <a href="http://localhost:8000/auth/google/login" >Login With Google</a>
+                </Box>
             </Container>
         </PageLayout>
     )
