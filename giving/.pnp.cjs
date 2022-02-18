@@ -41,7 +41,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "npm:1.2.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:17.0.2"],
-            ["react-google-login", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:5.2.2"],
             ["react-router-dom", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:6.2.1"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"],
             ["vite", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:2.8.4"]
@@ -1550,7 +1549,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vitejs/plugin-react", "npm:1.2.0"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:17.0.2"],
-            ["react-google-login", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:5.2.2"],
             ["react-router-dom", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:6.2.1"],
             ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"],
             ["vite", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:2.8.4"]
@@ -2224,18 +2222,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["prop-types", [
-        ["npm:15.8.1", {
-          "packageLocation": "./.yarn/cache/prop-types-npm-15.8.1-17c71ee7ee-c056d3f1c0.zip/node_modules/prop-types/",
-          "packageDependencies": [
-            ["prop-types", "npm:15.8.1"],
-            ["loose-envify", "npm:1.4.0"],
-            ["object-assign", "npm:4.1.1"],
-            ["react-is", "npm:16.13.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["react", [
         ["npm:17.0.2", {
           "packageLocation": "./.yarn/cache/react-npm-17.0.2-99ba37d931-b254cc17ce.zip/node_modules/react/",
@@ -2267,33 +2253,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "@types/react",
-            "react"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["react-google-login", [
-        ["npm:5.2.2", {
-          "packageLocation": "./.yarn/cache/react-google-login-npm-5.2.2-b989308685-29199c7035.zip/node_modules/react-google-login/",
-          "packageDependencies": [
-            ["react-google-login", "npm:5.2.2"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:5.2.2", {
-          "packageLocation": "./.yarn/__virtual__/react-google-login-virtual-ac2d0a01d1/0/cache/react-google-login-npm-5.2.2-b989308685-29199c7035.zip/node_modules/react-google-login/",
-          "packageDependencies": [
-            ["react-google-login", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:5.2.2"],
-            ["@types/react", "npm:17.0.39"],
-            ["@types/react-dom", "npm:17.0.11"],
-            ["prop-types", "npm:15.8.1"],
-            ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:02e390c3bb66f2cf8e385eaa12876115da50398e0d062eba5c06874fd34f88b30dfbd13ee360502e2a42e31e72abd1870de17988a0e25a21d23ad5a259029e5c#npm:17.0.2"]
-          ],
-          "packagePeers": [
-            "@types/react-dom",
-            "@types/react",
-            "react-dom",
             "react"
           ],
           "linkType": "HARD",
