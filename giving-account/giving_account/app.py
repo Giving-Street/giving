@@ -3,6 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
 from giving_account.config import Config
+from giving_account.routers.default.router import default_router
 from giving_account.routers.google_auth.router import google_auth_router
 
 app = FastAPI()
@@ -18,4 +19,5 @@ app.add_middleware(
     allow_headers=["*"],
     allow_credentials=True,
 )
+app.include_router(default_router)
 app.include_router(google_auth_router)
