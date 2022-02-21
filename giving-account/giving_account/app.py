@@ -8,10 +8,8 @@ from giving_account.routers.google_auth.router import google_auth_router
 
 app = FastAPI()
 app.state.config = Config()
-app.add_middleware(SessionMiddleware, secret_key="!secret")
-allows_origins = [
-    "http://localhost:3000"
-]
+app.add_middleware(SessionMiddleware, secret_key=app.state.config.google_oauth.api_secret_key)
+allows_origins = ["http://localhost:3000"]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allows_origins,
