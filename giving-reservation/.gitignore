@@ -140,3 +140,5 @@ cython_debug/
 !pyproject.toml
 !poetry.lock
 credentials/
+
+.db
